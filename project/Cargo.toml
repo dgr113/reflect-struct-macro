@@ -1,0 +1,21 @@
+[package]
+name = "reflect-struct"
+version = "0.1.0"
+authors = ["dgr113 <dmitry-gr87@yandex.ru>"]
+edition = "2018"
+
+
+[lib]
+path = "lib.rs"
+
+
+[workspace]
+
+
+[dependencies]
+reflect-struct-macro = { path = "./reflect_struct_macro" }
+reflect-struct-macro-derive = { path = "./reflect_struct_macro_derive" }
+
+
+[profile.release]
+lto = true
